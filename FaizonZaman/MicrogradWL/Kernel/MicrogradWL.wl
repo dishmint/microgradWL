@@ -11,11 +11,14 @@ BeginPackage["FaizonZaman`MicrogradWL`"];
 (*Declare your public symbols here:*)
 
 
-SayHello;
-
+MGValue::usage = "Represents a value in micrograd";
+MGValueQ::usage = "Tests whether a value is a valid micrograd MGValue";
+$MGValues::usage = "Returns the list of MGValues"
 
 Begin["`Private`"];
-
+(* LOAD IN ENGINE AND NN PACKAGES *)
+Needs["FaizonZaman`MicrogradWL`Engine`"]
+Needs["FaizonZaman`MicrogradWL`NN`"]
 
 (* ::Section:: *)
 (*Definitions*)
@@ -23,10 +26,6 @@ Begin["`Private`"];
 
 (* ::Text:: *)
 (*Define your public and private symbols here:*)
-
-
-SayHello[name_? StringQ] := "Hello " <> name <> "!";
-
 
 (* ::Section::Closed:: *)
 (*Package Footer*)

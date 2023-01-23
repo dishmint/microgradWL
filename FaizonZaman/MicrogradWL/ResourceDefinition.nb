@@ -5544,7 +5544,7 @@ Cell["Additional information about limitations, issues, etc.", "Text",
 }, Open  ]]
 },
 WindowSize->{1720, 680},
-WindowMargins->{{Automatic, 0}, {0, Automatic}},
+WindowMargins->{{Automatic, -1}, {0, Automatic}},
 WindowTitle->"MicrogradWL | Definition Notebook",
 TaggingRules->{
  "ResourceType" -> "Paclet", "ResourceCreateNotebook" -> True, 

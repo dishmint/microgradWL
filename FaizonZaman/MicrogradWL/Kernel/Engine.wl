@@ -15,7 +15,6 @@ FaizonZaman`MicrogradWL`MGValue /: MakeBoxes[obj: FaizonZaman`MicrogradWL`MGValu
         };
     (* Hide the rest *)
     below = {
-        BoxForm`SummaryItem[{"ID: ", asc["ID"]}],
         BoxForm`SummaryItem[{"_Backward: ", asc["_Backward"]}],
         BoxForm`SummaryItem[{"_Prev: ", asc["_Prev"]}],
         BoxForm`SummaryItem[{"_Op: ", asc["_Op"]}]
@@ -29,7 +28,7 @@ FaizonZaman`MicrogradWL`MGValue /: MakeBoxes[obj: FaizonZaman`MicrogradWL`MGValu
         ]
     ];
 
-MGValueAscQ[asc_?AssociationQ] := AllTrue[{"ID", "Data", "Grad", "_Backward", "_Prev", "_Op", "Label"}, KeyExistsQ[asc, #]&]
+MGValueAscQ[asc_?AssociationQ] := AllTrue[{"Data", "Grad", "_Backward", "_Prev", "_Op", "Label"}, KeyExistsQ[asc, #]&]
 MGValueAscQ[_] = False
 $icon = Graphics[
     {White, Text["MGV"]},
@@ -44,19 +43,17 @@ Options[FaizonZaman`MicrogradWL`MGValue] = {
 
 FaizonZaman`MicrogradWL`MGValue[data_?NumberQ, opts:OptionsPattern[FaizonZaman`MicrogradWL`MGValue]] := Module[
     {
-        uid = Unique["$MGV"],
         prev = Replace[OptionValue["Previous"], Automatic -> {}],
         op = Replace[OptionValue["Operator"], Automatic -> ""],
         label = Replace[OptionValue["Label"], Automatic -> ""]
         },
-    FaizonZaman`MicrogradWL`MGValue[uid] ^= FaizonZaman`MicrogradWL`MGValue[<| "ID" -> ToString[uid], "Data" -> data, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> prev, "_Op" -> op, "Label" -> label |>]
+    FaizonZaman`MicrogradWL`MGValue[uid] ^= FaizonZaman`MicrogradWL`MGValue[<| "Data" -> data, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> prev, "_Op" -> op, "Label" -> label |>]
     ]
 
 FaizonZaman`MicrogradWL`MGValueQ[FaizonZaman`MicrogradWL`MGValue[asc_?MGValueAscQ]] := True
 FaizonZaman`MicrogradWL`MGValueQ[_] := False
 
 (* Properties *)
-FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "ID" ] := asc[ "ID" ]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "Data" ] := asc[ "Data" ]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "Grad" ] := asc[ "Grad" ]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Backward" ] := Switch[ asc[ "_Backward" ],
@@ -70,19 +67,22 @@ FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Op" ] := asc[ "_Op" ]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Backward", f:(_Function | _IconizedObject) ] := FaizonZaman`MicrogradWL`MGValue[ReplacePart[ asc, Key[ "_Backward" ] -> f ]]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "Grad", grad_?NumberQ ] := FaizonZaman`MicrogradWL`MGValue[ReplacePart[ asc, Key[ "Grad" ] -> grad ]]
 
+(* TODO: Use `D` directly to compute the derivative *)
+(* TODO: Would it be possible to use a symbol for Backward instead, like out = BackwardPlus ? I think the code will look cleaner that way *)
 (* ADD *)
+MGValuePlus[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a["Data"] + b["Data"], "Previous" -> { a, b }, "Operator" -> "Plus"]
 FaizonZaman`MicrogradWL`MGValue /: Plus[a:FaizonZaman`MicrogradWL`MGValue[_], b:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
     {out, ograd},
-    out = FaizonZaman`MicrogradWL`MGValue[a["Data"] + b["Data"], "Previous" -> {FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ], FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ]}, "Operator" -> "Plus"];
+    out = MGValuePlus[ a, b ];
     ograd = out[ "Grad" ];
     out = out[
         "_Backward" ,
         Iconize[
             Function[
-                FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ][ "Grad", FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ][ "Grad" ] + ograd ];
-                FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ][ "Grad", FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ][ "Grad" ] + ograd ];
+                a[ "Grad", a[ "Grad" ] + ograd ];
+                b[ "Grad", b[ "Grad" ] + ograd ];
                 ],
-            "_Backward"
+            "_BackwardPlus"
             ]
         ];
     out
@@ -90,21 +90,19 @@ FaizonZaman`MicrogradWL`MGValue /: Plus[a:FaizonZaman`MicrogradWL`MGValue[_], b:
 FaizonZaman`MicrogradWL`MGValue /: Plus[a_?NumberQ, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a] + b
 
 (* MULT *)
+MGValueTimes[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a["Data"] * b["Data"], "Previous" -> { a, b }, "Operator" -> "Times"]
 FaizonZaman`MicrogradWL`MGValue /: Times[a:FaizonZaman`MicrogradWL`MGValue[_], b:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
     {out, ograd},
-    out = FaizonZaman`MicrogradWL`MGValue[ a["Data"] * b["Data"],
-        "Previous" -> {FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ], FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ]},
-        "Operator" -> "Times"
-        ];
+    out = MGValueTimes[ a, b ];
     ograd = out[ "Grad" ];
     out = out[
         "_Backward" ,
         Iconize[
             Function[
-                FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ][ "Grad", FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ][ "Grad" ] * ograd ];
-                FaizonZaman`MicrogradWL`MGValue[ Symbol[ b[ "ID" ] ] ][ "Grad", FaizonZaman`MicrogradWL`MGValue[ Symbol[ a[ "ID" ] ] ][ "Grad" ] * ograd ];
+                a[ "Grad", b[ "Grad" ] * ograd ];
+                b[ "Grad", a[ "Grad" ] * ograd ];
                 ],
-            "_Backward"
+            "_BackwardTimes"
             ]
         ];
     out

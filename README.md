@@ -1,4 +1,4 @@
-# microgradWL
+# microgradWL [WIP]
 
 This repo implements [micrograd](https://github.com/karpathy/micrograd) as a WL paclet.
 

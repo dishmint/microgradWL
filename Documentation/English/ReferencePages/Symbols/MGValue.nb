@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    101552,       2213]
-NotebookOptionsPosition[     93484,       2037]
-NotebookOutlinePosition[     94632,       2071]
-CellTagsIndexPosition[     94518,       2065]
+NotebookDataLength[    160936,       3325]
+NotebookOptionsPosition[    152298,       3137]
+NotebookOutlinePosition[    153450,       3171]
+CellTagsIndexPosition[    153334,       3165]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -112,10 +112,10 @@ Cell[TextData[{
     "363bc3a1-52ac-4f05-80a8-2da1d2225f3a"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
     "c1510548-f0db-40b8-b478-5d1bbdbf6aa1", 
-     "368bf809-1cee-4573-be1f-e0ad61c81ee4"], $CellContext`cellobj$$ = 
+     "3e6e8486-43a7-41df-aa59-2dd96bd15db5"], $CellContext`cellobj$$ = 
     CellObject[
     "83d37d8c-d7db-480a-8ea3-0bcfaae3819a", 
-     "9ea0c4ee-19de-4591-b6c1-e2d3c3308cc0"]}, 
+     "3dabcc8d-5e85-44ee-8ce9-e90dd45a70df"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -524,9 +524,10 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"MGValue", "[", "1", "]"}], " ", "+", " ", 
   RowBox[{"MGValue", "[", "2", "]"}]}]], "Input",
- CellChangeTimes->{{3.8834289118710613`*^9, 3.883428933192593*^9}},
+ CellChangeTimes->{{3.8834289118710613`*^9, 3.883428933192593*^9}, {
+  3.8836043468810663`*^9, 3.883604347724478*^9}},
  CellTags->"DefaultContent",
- CellLabel->"In[4]:=",
+ CellLabel->"In[9]:=",
  CellID->978490832,ExpressionUUID->"a2897c81-2259-478c-8153-bf5645c6ecd2"],
 
 Cell[BoxData[
@@ -559,13 +560,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV16\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["3", "SummaryItem"]}]}, {
+                 TagBox["3", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -604,13 +601,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV16\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["3", "SummaryItem"]}]}, {
+                 TagBox["3", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -623,7 +616,7 @@ Cell[BoxData[
                    DynamicModuleBox[{Typeset`open = False}, 
                     TemplateBox[{"Expression", 
                     StyleBox[
-                    "\"_Backward\"", "IconizedCustomName", StripOnInput -> 
+                    "\"_BackwardPlus\"", "IconizedCustomName", StripOnInput -> 
                     False], 
                     GridBox[{{
                     RowBox[{
@@ -633,38 +626,28 @@ Cell[BoxData[
                     RowBox[{
                     TagBox["\"Byte count: \"", "IconizedLabel"], 
                     "\[InvisibleSpace]", 
-                    TagBox["5392", "IconizedItem"]}]}}, 
+                    TagBox["4688", "IconizedItem"]}]}}, 
                     GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                     DefaultBaseStyle -> "Column", 
                     GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                     Dynamic[Typeset`open]}, "IconizedObject"]], (
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$14950]; 
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10722]; 
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10722]; 
+                    "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$14950]; 
                    Null)& , SelectWithContents -> True, Selectable -> False], 
                   "SummaryItem"]}], ""}, {
                RowBox[{
@@ -701,13 +684,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV14\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -746,13 +725,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV14\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -788,8 +763,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                     ",", 
                     InterpretationBox[
@@ -820,13 +795,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV15\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}, {
+                    TagBox["2", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -865,13 +836,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV15\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2", "SummaryItem"]}]}, {
+                    TagBox["2", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -907,8 +874,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True]}], 
                     "}"}], "SummaryItem"]}], ""}, {
                RowBox[{
@@ -932,46 +899,37 @@ Cell[BoxData[
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
   FaizonZaman`MicrogradWL`MGValue[<|
-   "ID" -> "$MGV16", "Data" -> 3, "Grad" -> 0, "_Backward" -> 
-    IconizedObject[(FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity,
-            "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10722]; 
-      FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity,
-            "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10722]; Null)& , 
-      "_Backward", Method -> Automatic], "_Prev" -> {
+   "Data" -> 3, "Grad" -> 0, "_Backward" -> 
+    IconizedObject[(
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV14", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>], 
+        "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$14950]; 
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV15", "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>]}, "_Op" -> "Plus"|>],
+        "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$14950]; Null)& , 
+      "_BackwardPlus", Method -> Automatic], "_Prev" -> {
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>], 
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 2, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Plus", "Label" -> ""|>],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.8834303826020327`*^9, 3.8834306520410023`*^9, 
-  3.8834320714026537`*^9, 3.883446016581415*^9},
+  3.8834320714026537`*^9, 3.883446016581415*^9, 3.883604348893971*^9},
  CellTags->"DefaultContent",
- CellLabel->"Out[4]=",
- CellID->173004419,ExpressionUUID->"02c90b1a-8367-45dd-b641-347bd10f6b7c"]
+ CellLabel->"Out[9]=",
+ CellID->713124820,ExpressionUUID->"3698aa37-2426-40cd-8f8b-8e007df4b566"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -980,7 +938,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"MGValue", "[", "1", "]"}], " ", "+", " ", "1"}]], "Input",
  CellChangeTimes->{3.883428986771298*^9},
- CellLabel->"In[5]:=",
+ CellLabel->"In[10]:=",
  CellID->1926197259,ExpressionUUID->"a43add08-b586-4875-a706-5c4025bf9d7a"],
 
 Cell[BoxData[
@@ -1013,13 +971,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV19\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["2", "SummaryItem"]}]}, {
+                 TagBox["2", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -1058,13 +1012,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV19\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["2", "SummaryItem"]}]}, {
+                 TagBox["2", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -1077,7 +1027,7 @@ Cell[BoxData[
                    DynamicModuleBox[{Typeset`open = False}, 
                     TemplateBox[{"Expression", 
                     StyleBox[
-                    "\"_Backward\"", "IconizedCustomName", StripOnInput -> 
+                    "\"_BackwardPlus\"", "IconizedCustomName", StripOnInput -> 
                     False], 
                     GridBox[{{
                     RowBox[{
@@ -1087,38 +1037,28 @@ Cell[BoxData[
                     RowBox[{
                     TagBox["\"Byte count: \"", "IconizedLabel"], 
                     "\[InvisibleSpace]", 
-                    TagBox["5392", "IconizedItem"]}]}}, 
+                    TagBox["4688", "IconizedItem"]}]}}, 
                     GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                     DefaultBaseStyle -> "Column", 
                     GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                     Dynamic[Typeset`open]}, "IconizedObject"]], (
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15001]; 
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10776]; 
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10776]; 
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15001]; 
                    Null)& , SelectWithContents -> True, Selectable -> False], 
                   "SummaryItem"]}], ""}, {
                RowBox[{
@@ -1155,13 +1095,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV17\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1200,13 +1136,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV17\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1242,8 +1174,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                     ",", 
                     InterpretationBox[
@@ -1274,13 +1206,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV18\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1319,13 +1247,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV18\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1", "SummaryItem"]}]}, {
+                    TagBox["1", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1361,8 +1285,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True]}], 
                     "}"}], "SummaryItem"]}], ""}, {
                RowBox[{
@@ -1386,45 +1310,36 @@ Cell[BoxData[
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
   FaizonZaman`MicrogradWL`MGValue[<|
-   "ID" -> "$MGV19", "Data" -> 2, "Grad" -> 0, "_Backward" -> 
-    IconizedObject[(FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity,
-            "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10776]; 
-      FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity,
-            "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10776]; Null)& , 
-      "_Backward", Method -> Automatic], "_Prev" -> {
+   "Data" -> 2, "Grad" -> 0, "_Backward" -> 
+    IconizedObject[(
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV17", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>], 
+        "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15001]; 
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV18", "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>]}, "_Op" -> "Plus"|>],
+        "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15001]; Null)& , 
+      "_BackwardPlus", Method -> Automatic], "_Prev" -> {
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>], 
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Plus", "Label" -> ""|>],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{3.883430386918706*^9, 3.883430654197689*^9, 
-  3.883432109904263*^9, 3.883446019725068*^9},
- CellLabel->"Out[5]=",
- CellID->796131028,ExpressionUUID->"90559abc-227d-467d-b5e4-a72ef377907c"]
+  3.883432109904263*^9, 3.883446019725068*^9, 3.883604350233498*^9},
+ CellLabel->"Out[10]=",
+ CellID->371689539,ExpressionUUID->"42e67089-ff5a-4fa3-843f-5895388b88bd"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1434,7 +1349,7 @@ Cell[BoxData[
   RowBox[{"MGValue", "[", "2.7", "]"}]}]], "Input",
  CellChangeTimes->{{3.883430401343677*^9, 3.883430403413576*^9}, {
   3.883432097386773*^9, 3.883432104333638*^9}},
- CellLabel->"In[6]:=",
+ CellLabel->"In[11]:=",
  CellID->1332678854,ExpressionUUID->"1dbbe7c9-cae0-4f75-b9f5-7025e72515ba"],
 
 Cell[BoxData[
@@ -1467,13 +1382,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV22\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["4.`", "SummaryItem"]}]}, {
+                 TagBox["4.`", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -1512,13 +1423,9 @@ Cell[BoxData[
                  Magnification])}], Background -> GrayLevel[0]], 
             GridBox[{{
                RowBox[{
-                 TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"$MGV22\"", "SummaryItem"]}], 
-               RowBox[{
                  TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["4.`", "SummaryItem"]}]}, {
+                 TagBox["4.`", "SummaryItem"]}], ""}, {
                RowBox[{
                  TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
@@ -1531,7 +1438,7 @@ Cell[BoxData[
                    DynamicModuleBox[{Typeset`open = False}, 
                     TemplateBox[{"Expression", 
                     StyleBox[
-                    "\"_Backward\"", "IconizedCustomName", StripOnInput -> 
+                    "\"_BackwardPlus\"", "IconizedCustomName", StripOnInput -> 
                     False], 
                     GridBox[{{
                     RowBox[{
@@ -1541,38 +1448,28 @@ Cell[BoxData[
                     RowBox[{
                     TagBox["\"Byte count: \"", "IconizedLabel"], 
                     "\[InvisibleSpace]", 
-                    TagBox["5392", "IconizedItem"]}]}}, 
+                    TagBox["4688", "IconizedItem"]}]}}, 
                     GridBoxAlignment -> {"Columns" -> {{Left}}}, 
                     DefaultBaseStyle -> "Column", 
                     GridBoxItemSize -> {
                     "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
                     Dynamic[Typeset`open]}, "IconizedObject"]], (
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
+                    "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15052]; 
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10827]; 
-                   FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-                    "Grad", FaizonZaman`MicrogradWL`MGValue[
-                    Symbol[
-                    
-                    FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-                    FaizonZaman`MicrogradWL`Engine`Private`ograd$10827]; 
+                    "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15052]; 
                    Null)& , SelectWithContents -> True, Selectable -> False], 
                   "SummaryItem"]}], ""}, {
                RowBox[{
@@ -1609,13 +1506,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV20\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2.7`", "SummaryItem"]}]}, {
+                    TagBox["1.3`", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1654,13 +1547,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV20\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["2.7`", "SummaryItem"]}]}, {
+                    TagBox["1.3`", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1696,8 +1585,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True], 
                     ",", 
                     InterpretationBox[
@@ -1728,13 +1617,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV21\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1.3`", "SummaryItem"]}]}, {
+                    TagBox["2.7`", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1773,13 +1658,9 @@ Cell[BoxData[
                     Magnification])}], Background -> GrayLevel[0]], 
                     GridBox[{{
                     RowBox[{
-                    TagBox["\"ID: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox["\"$MGV21\"", "SummaryItem"]}], 
-                    RowBox[{
                     TagBox["\"Data: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
-                    TagBox["1.3`", "SummaryItem"]}]}, {
+                    TagBox["2.7`", "SummaryItem"]}], ""}, {
                     RowBox[{
                     TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
                     "\[InvisibleSpace]", 
@@ -1815,8 +1696,8 @@ Cell[BoxData[
                     "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
                     
                     FaizonZaman`MicrogradWL`MGValue[<|
-                    "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> 
-                    Identity, "_Prev" -> {}, "_Op" -> ""|>], Selectable -> 
+                    "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Selectable -> 
                     False, Editable -> False, SelectWithContents -> True]}], 
                     "}"}], "SummaryItem"]}], ""}, {
                RowBox[{
@@ -1840,46 +1721,1265 @@ Cell[BoxData[
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
   FaizonZaman`MicrogradWL`MGValue[<|
-   "ID" -> "$MGV22", "Data" -> 4., "Grad" -> 0, "_Backward" -> 
-    IconizedObject[(FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> 
-           Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10827]; 
-      FaizonZaman`MicrogradWL`MGValue[
-        Symbol[
-         FaizonZaman`MicrogradWL`MGValue[<|
-          "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> 
-           Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]][
-       "Grad", FaizonZaman`MicrogradWL`MGValue[
-          Symbol[
-           
-           FaizonZaman`MicrogradWL`MGValue[<|
-            "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> 
-             Identity, "_Prev" -> {}, "_Op" -> ""|>]["ID"]]]["Grad"] + 
-        FaizonZaman`MicrogradWL`Engine`Private`ograd$10827]; Null)& , 
-      "_Backward", Method -> Automatic], "_Prev" -> {
+   "Data" -> 4., "Grad" -> 0, "_Backward" -> 
+    IconizedObject[(
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV20", "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>], 
+        "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15052]; 
       FaizonZaman`MicrogradWL`MGValue[<|
-       "ID" -> "$MGV21", "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, 
-        "_Prev" -> {}, "_Op" -> ""|>]}, "_Op" -> "Plus"|>],
+        "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15052]; Null)& , 
+      "_BackwardPlus", Method -> Automatic], "_Prev" -> {
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 1.3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>], 
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 2.7, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Plus", "Label" -> ""|>],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{
   3.8834304038440742`*^9, 3.883430665962421*^9, {3.88343209853712*^9, 
-   3.883432105174211*^9}, 3.8834460223099737`*^9},
- CellLabel->"Out[6]=",
- CellID->871170424,ExpressionUUID->"68889a88-b5dd-4a51-a8c6-d5dda85d5122"]
+   3.883432105174211*^9}, 3.8834460223099737`*^9, 3.883604351334344*^9},
+ CellLabel->"Out[11]=",
+ CellID->1285958714,ExpressionUUID->"cd4ff013-b810-4edb-83a3-22ff00a1a93c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MGValue", "[", "5", "]"}], " ", "*", " ", "6.4"}]], "Input",
+ CellChangeTimes->{{3.883604309921042*^9, 3.883604315740284*^9}},
+ CellLabel->"In[12]:=",
+ CellID->1372526995,ExpressionUUID->"6b9593d9-f052-4822-8c4b-be258049a571"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["MGValue",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {10., {0., 10.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = True), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              GrayLevel[1], 
+              InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["32.`", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {10., {0., 10.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = False), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              GrayLevel[1], 
+              InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["32.`", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  InterpretationBox[
+                   DynamicModuleBox[{Typeset`open = False}, 
+                    TemplateBox[{"Expression", 
+                    StyleBox[
+                    "\"_BackwardTimes\"", "IconizedCustomName", StripOnInput -> 
+                    False], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Head: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Function", "IconizedItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Byte count: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["4688", "IconizedItem"]}]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    DefaultBaseStyle -> "Column", 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    Dynamic[Typeset`open]}, "IconizedObject"]], (
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15103]; 
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15103]; 
+                   Null)& , SelectWithContents -> True, Selectable -> False], 
+                  "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["5", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    AutoDelete -> False, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["5", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Identity", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"\"", "SummaryItem"]}], ""}}, AutoDelete -> 
+                    False, BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Editable -> 
+                    False, SelectWithContents -> True, Selectable -> False], 
+                    ",", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}], Background -> GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["6.4`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}], Background -> GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["6.4`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Identity", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"\"", "SummaryItem"]}], ""}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
+                    False, GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Editable -> 
+                    False, SelectWithContents -> True, Selectable -> False]}],
+                     "}"}], "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Times\"", "SummaryItem"]}], ""}}, AutoDelete -> 
+             False, BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  FaizonZaman`MicrogradWL`MGValue[<|
+   "Data" -> 32., "Grad" -> 0, "_Backward" -> 
+    IconizedObject[(
+      FaizonZaman`MicrogradWL`MGValue[<|
+        "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15103]; 
+      FaizonZaman`MicrogradWL`MGValue[<|
+        "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15103]; Null)& , 
+      "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>], 
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 6.4, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Times", "Label" -> ""|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.883604316805335*^9, 3.8836043547747717`*^9},
+ CellLabel->"Out[12]=",
+ CellID->1776581239,ExpressionUUID->"6b94118f-447b-47a7-896d-35c1e3ba4de4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"2.1", " ", "*", " ", 
+    RowBox[{"MGValue", "[", "5", "]"}]}], ")"}], "+", "3"}]], "Input",
+ CellChangeTimes->{{3.883604333774951*^9, 3.8836043404833*^9}, {
+  3.883604387690329*^9, 3.883604390272504*^9}},
+ CellLabel->"In[13]:=",
+ CellID->2074088861,ExpressionUUID->"f1ca8591-45e1-4d87-9fa0-6fdc41f849e7"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["MGValue",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"], 
+               ImageSizeCache -> {10., {0., 10.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = True), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              GrayLevel[1], 
+              InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["13.5`", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+             AutoDelete -> False, 
+             BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True -> 
+        GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"], 
+               ImageSizeCache -> {10., {0., 10.}}], Appearance -> None, 
+              BaseStyle -> {}, ButtonFunction :> (Typeset`open$$ = False), 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GraphicsBox[{
+              GrayLevel[1], 
+              InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+             ImageSize -> 
+             Dynamic[{
+               Automatic, 
+                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}]], 
+            GridBox[{{
+               RowBox[{
+                 TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["13.5`", "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+               RowBox[{
+                 TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  InterpretationBox[
+                   DynamicModuleBox[{Typeset`open = False}, 
+                    TemplateBox[{"Expression", 
+                    StyleBox[
+                    "\"_BackwardPlus\"", "IconizedCustomName", StripOnInput -> 
+                    False], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Head: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Function", "IconizedItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Byte count: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["19024", "IconizedItem"]}]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    DefaultBaseStyle -> "Column", 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    Dynamic[Typeset`open]}, "IconizedObject"]], (
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15158]; 
+                   FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+                    IconizedObject[(
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    Null)& , "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]}, "_Op" -> 
+                    "Times", "Label" -> ""|>][
+                    "Grad", 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+                    IconizedObject[(
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    Null)& , "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]}, "_Op" -> 
+                    "Times", "Label" -> ""|>]["Grad"] + 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15158]; 
+                   Null)& , SelectWithContents -> True, Selectable -> False], 
+                  "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  RowBox[{"{", 
+                    RowBox[{
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    AutoDelete -> False, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["3", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Identity", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"\"", "SummaryItem"]}], ""}}, AutoDelete -> 
+                    False, BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Editable -> 
+                    False, SelectWithContents -> True, Selectable -> False], 
+                    ",", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    DynamicModuleBox[{
+                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = True), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["10.5`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    AutoDelete -> False, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+                    True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"], 
+                    ImageSizeCache -> {8., {0., 8.}}], Appearance -> None, 
+                    BaseStyle -> {}, 
+                    ButtonFunction :> (Typeset`open$$ = False), Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox["\"MGV\"", {0, 0}]}, Background -> GrayLevel[0], 
+                    ImageSize -> Dynamic[{
+                    Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["10.5`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    InterpretationBox[
+                    DynamicModuleBox[{Typeset`open = False}, 
+                    TemplateBox[{"Expression", 
+                    StyleBox[
+                    "\"_BackwardTimes\"", "IconizedCustomName", StripOnInput -> 
+                    False], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Head: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Function", "IconizedItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Byte count: \"", "IconizedLabel"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["4688", "IconizedItem"]}]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    DefaultBaseStyle -> "Column", 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}], 
+                    Dynamic[Typeset`open]}, "IconizedObject"]], (
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    Null)& , SelectWithContents -> True, Selectable -> False],
+                     "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{Typeset`open$$ = False, 
+                    Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
+                    Typeset`open$$ = True), Appearance -> None, 
+                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}], Background -> 
+                    GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2.1`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Top}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
+                    True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
+                    Typeset`open$$ = False), Appearance -> None, 
+                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}], Background -> 
+                    GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["2.1`", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Identity", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"\"", "SummaryItem"]}], ""}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Top}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Editable -> 
+                    False, SelectWithContents -> True, Selectable -> False], 
+                    ",", 
+                    InterpretationBox[
+                    RowBox[{
+                    TagBox["MGValue", "SummaryHead"], "[", 
+                    
+                    DynamicModuleBox[{Typeset`open$$ = False, 
+                    Typeset`embedState$$ = "Ready"}, 
+                    TemplateBox[{
+                    PaneSelectorBox[{False -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxOpener"]], ButtonFunction :> (
+                    Typeset`open$$ = True), Appearance -> None, 
+                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}], Background -> 
+                    GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["5", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Top}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}], 
+                    True -> GridBox[{{
+                    PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SummaryBoxCloser"]], ButtonFunction :> (
+                    Typeset`open$$ = False), Appearance -> None, 
+                    BaseStyle -> {}, Evaluator -> Automatic, Method -> 
+                    "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}]], 
+                    GraphicsBox[{
+                    GrayLevel[1], 
+                    InsetBox[
+                    FormBox["\"MGV\"", TraditionalForm], {0, 0}]}, ImageSize -> 
+                    Dynamic[{Automatic, 3.5 (CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification])}], Background -> 
+                    GrayLevel[0]], 
+                    GridBox[{{
+                    RowBox[{
+                    TagBox["\"Data: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["5", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"Grad: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["0", "SummaryItem"]}], "\[SpanFromLeft]"}, {
+                    RowBox[{
+                    TagBox["\"_Backward: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["Identity", "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Prev: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"\"", "SummaryItem"]}], ""}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Automatic}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {ShowStringCharacters -> False, NumberMarks -> 
+                    False, PrintPrecision -> 3, ShowSyntaxStyles -> False}]}},
+                     GridBoxAlignment -> {"Columns" -> {{Left}}, 
+                    "Rows" -> {{Top}}}, AutoDelete -> False, 
+                    GridBoxItemSize -> {"Columns" -> {{Automatic}}, 
+                    "Rows" -> {{Automatic}}}, BaselinePosition -> {1, 1}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], Editable -> 
+                    False, SelectWithContents -> True, Selectable -> False]}],
+                     "}"}], "SummaryItem"]}], ""}, {
+                    RowBox[{
+                    TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Times\"", "SummaryItem"]}], ""}}, AutoDelete -> 
+                    False, BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, 
+                    AutoDelete -> False, BaselinePosition -> {1, 1}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
+                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+                    IconizedObject[(
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+                    "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+                    FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+                    Null)& , "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], 
+                    
+                    FaizonZaman`MicrogradWL`MGValue[<|
+                    "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                    "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]}, "_Op" -> 
+                    "Times", "Label" -> ""|>], Editable -> False, 
+                    SelectWithContents -> True, Selectable -> False]}], "}"}],
+                   "SummaryItem"]}], ""}, {
+               RowBox[{
+                 TagBox["\"_Op: \"", "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox["\"Plus\"", "SummaryItem"]}], ""}}, AutoDelete -> 
+             False, BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{2}}, "Rows" -> {{Automatic}}}]}}, AutoDelete -> 
+          False, BaselinePosition -> {1, 1}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  FaizonZaman`MicrogradWL`MGValue[<|
+   "Data" -> 13.5, "Grad" -> 0, "_Backward" -> 
+    IconizedObject[(
+      FaizonZaman`MicrogradWL`MGValue[<|
+        "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+         "_Op" -> "", "Label" -> ""|>][
+       "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+           "_Op" -> "", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15158]; 
+      FaizonZaman`MicrogradWL`MGValue[<|
+        "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+         IconizedObject[(
+           FaizonZaman`MicrogradWL`MGValue[<|
+             "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+              "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+            "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+               "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+             FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+           FaizonZaman`MicrogradWL`MGValue[<|
+             "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {},
+               "_Op" -> "", "Label" -> ""|>][
+            "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+               "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+             FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; Null)& , 
+           "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+           
+           FaizonZaman`MicrogradWL`MGValue[<|
+            "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+             "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], 
+           
+           FaizonZaman`MicrogradWL`MGValue[<|
+            "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+             "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Times", "Label" -> 
+         ""|>]["Grad", 
+        FaizonZaman`MicrogradWL`MGValue[<|
+          "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+           IconizedObject[(
+             FaizonZaman`MicrogradWL`MGValue[<|
+               "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+              "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                 "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                  "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+               FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+             FaizonZaman`MicrogradWL`MGValue[<|
+               "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+                "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+              "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+                 "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+                  "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+               FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; Null)& , 
+             "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+             
+             FaizonZaman`MicrogradWL`MGValue[<|
+              "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+               "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>], 
+             
+             FaizonZaman`MicrogradWL`MGValue[<|
+              "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+               "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]}, "_Op" -> 
+           "Times", "Label" -> ""|>]["Grad"] + 
+        FaizonZaman`MicrogradWL`Engine`Private`ograd$15158]; Null)& , 
+      "_BackwardPlus", Method -> Automatic], "_Prev" -> {
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 3, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+        "_Op" -> "", "Label" -> ""|>], 
+      FaizonZaman`MicrogradWL`MGValue[<|
+       "Data" -> 10.5, "Grad" -> 0, "_Backward" -> 
+        IconizedObject[(
+          FaizonZaman`MicrogradWL`MGValue[<|
+            "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+             "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>][
+           "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+              "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, 
+               "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+            FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; 
+          FaizonZaman`MicrogradWL`MGValue[<|
+            "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+             "_Op" -> "", "Label" -> ""|>][
+           "Grad", FaizonZaman`MicrogradWL`MGValue[<|
+              "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, 
+               "_Prev" -> {}, "_Op" -> "", "Label" -> ""|>]["Grad"] 
+            FaizonZaman`MicrogradWL`Engine`Private`ograd$15155]; Null)& , 
+          "_BackwardTimes", Method -> Automatic], "_Prev" -> {
+          
+          FaizonZaman`MicrogradWL`MGValue[<|
+           "Data" -> 2.1, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {},
+             "_Op" -> "", "Label" -> ""|>], 
+          
+          FaizonZaman`MicrogradWL`MGValue[<|
+           "Data" -> 5, "Grad" -> 0, "_Backward" -> Identity, "_Prev" -> {}, 
+            "_Op" -> "", "Label" -> ""|>]}, "_Op" -> "Times", "Label" -> 
+        ""|>]}, "_Op" -> "Plus", "Label" -> ""|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.8836043417997427`*^9, 3.88360439065204*^9},
+ CellLabel->"Out[13]=",
+ CellID->2005524932,ExpressionUUID->"04d8c108-34e4-4c73-a316-46ca1d3d7791"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2035,8 +3135,8 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{1720, 680},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{720, 410},
+WindowMargins->{{0, Automatic}, {-103, Automatic}},
 TaggingRules-><|"Paclet" -> "FaizonZaman/MicrogradWL"|>,
 CellContext->"Global`",
 FrontEndVersion->"13.2 for Mac OS X ARM (64-bit) (November 18, 2022)",
@@ -2054,18 +3154,18 @@ CellTagsIndex->{
    CellTags->"ExtendedExamples",
    CellID->1786991988]},
  "DefaultContent"->{
-  Cell[20109, 522, 322, 7, 27, "Input",ExpressionUUID->"a2897c81-2259-478c-8153-bf5645c6ecd2",
+  Cell[20109, 522, 373, 8, 27, "Input",ExpressionUUID->"a2897c81-2259-478c-8153-bf5645c6ecd2",
    CellTags->"DefaultContent",
    CellID->978490832],
-  Cell[20434, 531, 22445, 442, 52, "Output",ExpressionUUID->"02c90b1a-8367-45dd-b641-347bd10f6b7c",
+  Cell[20485, 532, 20603, 399, 52, "Output",ExpressionUUID->"3698aa37-2426-40cd-8f8b-8e007df4b566",
    CellTags->"DefaultContent",
-   CellID->173004419]}
+   CellID->713124820]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"ExtendedExamples", 93998, 2051},
- {"DefaultContent", 94191, 2055}
+ {"ExtendedExamples", 152814, 3151},
+ {"DefaultContent", 153007, 3155}
  }
 *)
 (*NotebookFileOutline
@@ -2138,80 +3238,92 @@ Cell[19168, 494, 242, 5, 35, "ExampleSection",ExpressionUUID->"1955f2a8-e3a6-409
 Cell[19413, 501, 671, 17, 26, "ExampleText",ExpressionUUID->"efa4c1b0-1b83-4524-8c45-f3ca9cb42d6b",
  CellID->1996783277],
 Cell[CellGroupData[{
-Cell[20109, 522, 322, 7, 27, "Input",ExpressionUUID->"a2897c81-2259-478c-8153-bf5645c6ecd2",
+Cell[20109, 522, 373, 8, 27, "Input",ExpressionUUID->"a2897c81-2259-478c-8153-bf5645c6ecd2",
  CellTags->"DefaultContent",
  CellID->978490832],
-Cell[20434, 531, 22445, 442, 52, "Output",ExpressionUUID->"02c90b1a-8367-45dd-b641-347bd10f6b7c",
+Cell[20485, 532, 20603, 399, 52, "Output",ExpressionUUID->"3698aa37-2426-40cd-8f8b-8e007df4b566",
  CellTags->"DefaultContent",
- CellID->173004419]
+ CellID->713124820]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42916, 978, 234, 5, 27, "Input",ExpressionUUID->"a43add08-b586-4875-a706-5c4025bf9d7a",
+Cell[41125, 936, 235, 5, 27, "Input",ExpressionUUID->"a43add08-b586-4875-a706-5c4025bf9d7a",
  CellID->1926197259],
-Cell[43153, 985, 22410, 441, 52, "Output",ExpressionUUID->"90559abc-227d-467d-b5e4-a72ef377907c",
- CellID->796131028]
+Cell[41363, 943, 20569, 398, 52, "Output",ExpressionUUID->"42e67089-ff5a-4fa3-843f-5895388b88bd",
+ CellID->371689539]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[65600, 1431, 301, 6, 27, "Input",ExpressionUUID->"1dbbe7c9-cae0-4f75-b9f5-7025e72515ba",
+Cell[61969, 1346, 302, 6, 27, "Input",ExpressionUUID->"1dbbe7c9-cae0-4f75-b9f5-7025e72515ba",
  CellID->1332678854],
-Cell[65904, 1439, 22482, 442, 52, "Output",ExpressionUUID->"68889a88-b5dd-4a51-a8c6-d5dda85d5122",
- CellID->871170424]
+Cell[62274, 1354, 20642, 399, 52, "Output",ExpressionUUID->"cd4ff013-b810-4edb-83a3-22ff00a1a93c",
+ CellID->1285958714]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[82953, 1758, 261, 5, 27, "Input",ExpressionUUID->"6b9593d9-f052-4822-8c4b-be258049a571",
+ CellID->1372526995],
+Cell[83217, 1765, 20681, 404, 52, "Output",ExpressionUUID->"6b94118f-447b-47a7-896d-35c1e3ba4de4",
+ CellID->1776581239]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[103935, 2174, 357, 8, 27, "Input",ExpressionUUID->"f1ca8591-45e1-4d87-9fa0-6fdc41f849e7",
+ CellID->2074088861],
+Cell[104295, 2184, 42905, 797, 52, "Output",ExpressionUUID->"04d8c108-34e4-4c73-a316-46ca1d3d7791",
+ CellID->2005524932]
 }, Open  ]]
 }, Open  ]],
-Cell[88413, 1885, 265, 5, 35, "ExampleSection",ExpressionUUID->"607cc9f0-c166-45bf-9a97-c1adbab14a90",
+Cell[147227, 2985, 265, 5, 35, "ExampleSection",ExpressionUUID->"607cc9f0-c166-45bf-9a97-c1adbab14a90",
  CellID->1140484481],
 Cell[CellGroupData[{
-Cell[88703, 1894, 244, 5, 23, "ExampleSection",ExpressionUUID->"374357a8-d351-4e8d-9f8c-63082d7abe76",
+Cell[147517, 2994, 244, 5, 23, "ExampleSection",ExpressionUUID->"374357a8-d351-4e8d-9f8c-63082d7abe76",
  CellID->1831122692],
-Cell[88950, 1901, 245, 5, 26, "ExampleSubsection",ExpressionUUID->"d8c937e2-ddd2-4298-a775-f0962edffe62",
+Cell[147764, 3001, 245, 5, 26, "ExampleSubsection",ExpressionUUID->"d8c937e2-ddd2-4298-a775-f0962edffe62",
  CellID->90939287],
-Cell[89198, 1908, 247, 5, 22, "ExampleSubsection",ExpressionUUID->"832b86fe-e641-477a-8ecc-87b52612248e",
+Cell[148012, 3008, 247, 5, 22, "ExampleSubsection",ExpressionUUID->"832b86fe-e641-477a-8ecc-87b52612248e",
  CellID->1555723592]
 }, Open  ]],
-Cell[89460, 1916, 249, 5, 35, "ExampleSection",ExpressionUUID->"2b32378b-2e41-4d88-8b4d-0a432b3700ac",
+Cell[148274, 3016, 249, 5, 35, "ExampleSection",ExpressionUUID->"2b32378b-2e41-4d88-8b4d-0a432b3700ac",
  CellID->1433008519],
-Cell[89712, 1923, 258, 5, 23, "ExampleSection",ExpressionUUID->"5a3f2295-0ef4-4672-87d2-234c89f8d9df",
+Cell[148526, 3023, 258, 5, 23, "ExampleSection",ExpressionUUID->"5a3f2295-0ef4-4672-87d2-234c89f8d9df",
  CellID->545077728],
-Cell[89973, 1930, 252, 5, 23, "ExampleSection",ExpressionUUID->"1b7160e5-6bbb-4e1b-8809-2cc875d87b8c",
+Cell[148787, 3030, 252, 5, 23, "ExampleSection",ExpressionUUID->"1b7160e5-6bbb-4e1b-8809-2cc875d87b8c",
  CellID->2103620041],
-Cell[90228, 1937, 257, 5, 23, "ExampleSection",ExpressionUUID->"e8782aee-2af2-4011-b670-af9cb311b7c4",
+Cell[149042, 3037, 257, 5, 23, "ExampleSection",ExpressionUUID->"e8782aee-2af2-4011-b670-af9cb311b7c4",
  CellID->1518748526],
-Cell[90488, 1944, 249, 5, 23, "ExampleSection",ExpressionUUID->"c7ae4206-139c-472b-9265-7d1d6763bd34",
+Cell[149302, 3044, 249, 5, 23, "ExampleSection",ExpressionUUID->"c7ae4206-139c-472b-9265-7d1d6763bd34",
  CellID->615848240]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[90774, 1954, 111, 1, 72, "MetadataSection",ExpressionUUID->"ae232bcb-19e6-44ef-ae54-445ee806d569",
+Cell[149588, 3054, 111, 1, 72, "MetadataSection",ExpressionUUID->"ae232bcb-19e6-44ef-ae54-445ee806d569",
  CellID->1837674787],
-Cell[90888, 1957, 476, 12, 26, "History",ExpressionUUID->"1229865f-3b43-4295-a9e6-79edaddbf6c3",
+Cell[149702, 3057, 476, 12, 26, "History",ExpressionUUID->"1229865f-3b43-4295-a9e6-79edaddbf6c3",
  CellID->690333955],
 Cell[CellGroupData[{
-Cell[91389, 1973, 485, 13, 21, "CategorizationSection",ExpressionUUID->"560c5b25-a5c2-47f8-bef5-dd0cba5d150a",
+Cell[150203, 3073, 485, 13, 21, "CategorizationSection",ExpressionUUID->"560c5b25-a5c2-47f8-bef5-dd0cba5d150a",
  CellID->1736120591],
-Cell[91877, 1988, 135, 2, 35, "Categorization",ExpressionUUID->"8cf8054b-0868-4ca7-8f15-7916eea84a97",
+Cell[150691, 3088, 135, 2, 35, "Categorization",ExpressionUUID->"8cf8054b-0868-4ca7-8f15-7916eea84a97",
  CellID->1118461148],
-Cell[92015, 1992, 152, 2, 35, "Categorization",ExpressionUUID->"4ca98a0f-f094-445f-952c-779823ddcef6",
+Cell[150829, 3092, 152, 2, 35, "Categorization",ExpressionUUID->"4ca98a0f-f094-445f-952c-779823ddcef6",
  CellID->1824702189],
-Cell[92170, 1996, 149, 2, 35, "Categorization",ExpressionUUID->"9ff2e5b9-44cd-4ecd-afe8-736404ecff70",
+Cell[150984, 3096, 149, 2, 35, "Categorization",ExpressionUUID->"9ff2e5b9-44cd-4ecd-afe8-736404ecff70",
  CellID->1703211363],
-Cell[92322, 2000, 156, 2, 35, "Categorization",ExpressionUUID->"bb7e1d96-704e-456d-b71b-da695f4aaad1",
+Cell[151136, 3100, 156, 2, 35, "Categorization",ExpressionUUID->"bb7e1d96-704e-456d-b71b-da695f4aaad1",
  CellID->2063847078]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[92515, 2007, 110, 1, 21, "KeywordsSection",ExpressionUUID->"019c98eb-5018-43be-b068-ffbb4b6f1182",
+Cell[151329, 3107, 110, 1, 21, "KeywordsSection",ExpressionUUID->"019c98eb-5018-43be-b068-ffbb4b6f1182",
  CellID->174917993],
-Cell[92628, 2010, 100, 1, 70, "Keywords",ExpressionUUID->"1dff872a-7044-4c27-b194-6bbc5fbe6094",
+Cell[151442, 3110, 100, 1, 70, "Keywords",ExpressionUUID->"1dff872a-7044-4c27-b194-6bbc5fbe6094",
  CellID->2089079255]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[92765, 2016, 120, 1, 21, "TemplatesSection",ExpressionUUID->"e15ad67a-2c02-4fb0-8273-a8c696dc1a86",
+Cell[151579, 3116, 120, 1, 21, "TemplatesSection",ExpressionUUID->"e15ad67a-2c02-4fb0-8273-a8c696dc1a86",
  CellID->1944893982],
-Cell[92888, 2019, 148, 2, 70, "Template",ExpressionUUID->"e35ab0ad-4dd6-4337-9e6e-3279c79a3c77",
+Cell[151702, 3119, 148, 2, 70, "Template",ExpressionUUID->"e35ab0ad-4dd6-4337-9e6e-3279c79a3c77",
  CellID->984564487],
-Cell[93039, 2023, 138, 2, 70, "Template",ExpressionUUID->"12e98765-6ba2-4ecd-9e06-0052bc063111",
+Cell[151853, 3123, 138, 2, 70, "Template",ExpressionUUID->"12e98765-6ba2-4ecd-9e06-0052bc063111",
  CellID->1213832874],
-Cell[93180, 2027, 136, 2, 70, "Template",ExpressionUUID->"c0bee1e4-745b-4157-add6-d8a64bff570a",
+Cell[151994, 3127, 136, 2, 70, "Template",ExpressionUUID->"c0bee1e4-745b-4157-add6-d8a64bff570a",
  CellID->1941950465],
-Cell[93319, 2031, 137, 2, 70, "Template",ExpressionUUID->"ec1db47f-c40f-4c63-9576-12f1ef085724",
+Cell[152133, 3131, 137, 2, 70, "Template",ExpressionUUID->"ec1db47f-c40f-4c63-9576-12f1ef085724",
  CellID->904998149]
 }, Closed]]
 }, Open  ]]

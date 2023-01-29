@@ -75,9 +75,40 @@ FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Backward" ] := Switch[ Pe
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Prev" ] := Map[ PersistentSymbol ][ asc[ "_Prev" ] ]
 FaizonZaman`MicrogradWL`MGValue[ asc_?MGValueAscQ ][ "_Op" ] := asc[ "_Op" ]
 
-(* TODO: Use `D` directly to compute the derivative *)
-(* TODO: Would it be possible to use a symbol for Backward instead, like out = BackwardPlus ? I think the code will look cleaner that way *)
-(* TODO: Might need to use _Prev in the _Backward to ensure those objects are affected by the function. *)
+(* This is more work than needed, to mimic micrograd, I know, but it's useful for me to better understand and use more WL *)
+(* 
+    In[41]:= D[self + other, self]
+    Out[41]= 1 
+*)
+PlusD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Self"]  := D[self + other, self]  /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+PlusD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Other"] := D[self + other, other] /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+
+(* 
+    In[42]:= D[self other, self]
+    Out[42]= other
+*)
+TimesD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Self"]  := D[self other, self]  /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+TimesD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Other"] := D[self other, other] /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+
+(* 
+    In[43]:= D[self^other, self]
+    Out[43]= other self^(-1 + other)
+*)
+PowerD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Self"]  := D[self^other, self]  /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+PowerD[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue, "Other"] := D[self^other, other] /. { self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ], other -> PersistentSymbol[ b[ "Ref" ] ][ "Data" ]}
+
+(* 
+    In[19]:= D[Tanh[self], self]
+    Out[19]= Sech[self]^2
+ *)
+TanhD[a_FaizonZaman`MicrogradWL`MGValue] := D[Tanh[self], self] /. self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ]
+
+(* 
+    In[24]:= D[Exp[self], self]
+    Out[24]= E^self
+ *)
+ExpD[a_FaizonZaman`MicrogradWL`MGValue] := D[Exp[self], self] /. self -> PersistentSymbol[ a[ "Ref" ] ][ "Data" ]
+
 (* ADD *)
 MGValuePlus[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a["Data"] + b["Data"], "Previous" -> { a["Ref"], b["Ref"] }, "Operator" -> "Plus"]
 FaizonZaman`MicrogradWL`MGValue /: Plus[a:FaizonZaman`MicrogradWL`MGValue[_], b:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
@@ -86,8 +117,8 @@ FaizonZaman`MicrogradWL`MGValue /: Plus[a:FaizonZaman`MicrogradWL`MGValue[_], b:
     ograd = PersistentSymbol[ out[ "Ref" ] ][ "Grad" ];
     PersistentSymbol[ out[ "Ref" ] ][ "_Backward" ] = Iconize[
             Function[
-                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += ograd;
-                PersistentSymbol[ b[ "Ref" ] ][ "Grad" ] += ograd;
+                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += PlusD[ a, b, "Self"  ] * ograd;
+                PersistentSymbol[ b[ "Ref" ] ][ "Grad" ] += PlusD[ a, b, "Other" ] * ograd;
                 ],
             "_BackwardPlus"
             ];
@@ -103,33 +134,74 @@ FaizonZaman`MicrogradWL`MGValue /: Times[a:FaizonZaman`MicrogradWL`MGValue[_], b
     ograd = PersistentSymbol[ out[ "Ref" ] ][ "Grad" ];
     PersistentSymbol[ out[ "Ref" ] ][ "_Backward" ] = Iconize[
             Function[
-                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += PersistentSymbol[ b[ "Ref" ] ][ "Data" ] * ograd;
-                PersistentSymbol[ b[ "Ref" ] ][ "Grad" ] += PersistentSymbol[ a[ "Ref" ] ][ "Data" ] * ograd;
+                (* TimesD => D[self^other, _] *)
+                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += TimesD[ a, b, "Self"  ] * ograd;
+                PersistentSymbol[ b[ "Ref" ] ][ "Grad" ] += TimesD[ a, b, "Other" ] * ograd;
                 ],
-            "_BackwardPlus"
+            "_BackwardTimes"
             ];
     out = FaizonZaman`MicrogradWL`MGValue[ PersistentSymbol[ out[ "Ref" ] ] ]
     ]
 FaizonZaman`MicrogradWL`MGValue /: Times[a_?NumberQ, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a] * b
 
-(* TODO: POWER *)
-(* MGValuePower[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a["Data"] ^ b["Data"], "Previous" -> { a, b }, "Operator" -> "Power"]
+(* POWER *)
+MGValuePower[a_FaizonZaman`MicrogradWL`MGValue, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a["Data"] ^ b["Data"], "Previous" -> { a["Ref"], b["Ref"] }, "Operator" -> "Power"]
 FaizonZaman`MicrogradWL`MGValue /: Power[a:FaizonZaman`MicrogradWL`MGValue[_], b:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
     {out, ograd},
     out = MGValuePower[ a, b ];
     ograd = out[ "Grad" ];
-    out = out[
-        "_Backward" ,
-        Iconize[
+    PersistentSymbol[ out[ "Ref" ] ][ "_Backward" ] = Iconize[
             Function[
-                a[ "Grad", a[ "Grad" ] + (b[ "Data" ] * ( a[ "Data" ] ^ (b[ "Data" ] - 1)) * ograd) ];
+                (* PowerD => D[self^other, _] *)
+                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += (PowerD[ a, b, "Self" ] * ograd);
+                PersistentSymbol[ b[ "Ref" ] ][ "Grad" ] += (PowerD[ a, b, "Other"] * ograd);
                 ],
             "_BackwardPower"
-            ]
-        ];
-    out
+            ];
+    out = FaizonZaman`MicrogradWL`MGValue[ PersistentSymbol[ out[ "Ref" ] ] ]
     ]
-FaizonZaman`MicrogradWL`MGValue /: Power[a_?NumberQ, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a] ^ b *)
+FaizonZaman`MicrogradWL`MGValue /: Power[a_?NumberQ, b_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[a] ^ b
+
+(* TANH *)
+MGValueTanh[a_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[ Tanh[ a[ "Data" ] ], "Previous" -> { a["Ref"] }, "Operator" -> "Tanh"]
+FaizonZaman`MicrogradWL`MGValue /: Tanh[a:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
+    {out, ograd},
+    out = MGValueTanh[ a ];
+    ograd = out[ "Grad" ];
+    PersistentSymbol[ out[ "Ref" ] ][ "_Backward" ] = Iconize[
+            Function[
+                (* TanhD => D[Tanh[self], self] *)
+                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += (TanhD[ a ] * ograd);
+                ],
+            "_BackwardTanh"
+            ];
+    out = FaizonZaman`MicrogradWL`MGValue[ PersistentSymbol[ out[ "Ref" ] ] ]
+    ]
+
+(* Exp *)
+MGValueExp[a_FaizonZaman`MicrogradWL`MGValue] := FaizonZaman`MicrogradWL`MGValue[ Exp[ a[ "Data" ] ], "Previous" -> { a["Ref"] }, "Operator" -> "Exp"]
+FaizonZaman`MicrogradWL`MGValue /: Exp[a:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
+    {out, ograd},
+    out = MGValueExp[ a ];
+    ograd = out[ "Grad" ];
+    PersistentSymbol[ out[ "Ref" ] ][ "_Backward" ] = Iconize[
+            Function[
+                (* ExpD => D[Exp[self], self] *)
+                PersistentSymbol[ a[ "Ref" ] ][ "Grad" ] += (ExpD[ a ] * ograd);
+                ],
+            "_BackwardExp"
+            ];
+    out = FaizonZaman`MicrogradWL`MGValue[ PersistentSymbol[ out[ "Ref" ] ] ]
+    ]
+
+(* BACKWARD_MAIN *)
+FaizonZaman`MicrogradWL`MGValue /: Backward[a:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
+    {topo},
+    (* 1 - Build Topo *)
+    topo = NestGraph[(FaizonZaman`MicrogradWL`MGValue /@ #["_Prev"])&, a];
+
+    (* 2 - Call _Backward on each node in topo *)
+    ]
 
 End[]
 EndPackage[]

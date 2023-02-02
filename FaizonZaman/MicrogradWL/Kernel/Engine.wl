@@ -10,7 +10,7 @@ FaizonZaman`MicrogradWL`MGValue /: MakeBoxes[obj: FaizonZaman`MicrogradWL`MGValu
     {above, below},
     (* Always show the data and grad *)
     above = {
-        {If[asc["Label"] === "", Nothing, BoxForm`SummaryItem[{"Label: ", asc["Label"]}]], BoxForm`SummaryItem[{"Data: ", asc["Data"]}]},
+        {If[FaizonZaman`MicrogradWL`MGValue[asc["Ref"]]["Label"] === "", Nothing, BoxForm`SummaryItem[{"Label: ", asc["Label"]}]], BoxForm`SummaryItem[{"Data: ", asc["Data"]}]},
         {BoxForm`SummaryItem[{"Grad: ", asc["Grad"]}], SpanFromLeft}
         };
     (* Hide the rest *)
@@ -196,11 +196,37 @@ FaizonZaman`MicrogradWL`MGValue /: Exp[a:FaizonZaman`MicrogradWL`MGValue[_]] := 
 
 (* BACKWARD_MAIN *)
 FaizonZaman`MicrogradWL`MGValue /: Backward[a:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
-    {topo},
+    {topo={}, visited={}, buildTopo},
     (* 1 - Build Topo *)
-    topo = NestGraph[(FaizonZaman`MicrogradWL`MGValue /@ #["_Prev"])&, a];
+    buildTopo[v_FaizonZaman`MicrogradWL`MGValue]:= If[
+            Not@MemberQ[visited, v["Ref"]],
+            visited~Join~{v["Ref"]};
+            Scan[buildTopo, FaizonZaman`MicrogradWL`MGValue /@ v["_Prev"]];
+            topo = topo~Join~{v}
+            ];
+    (* TODO: Need to figure out the iteration count ^^^ *)
+    buildTopo[a];
 
     (* 2 - Call _Backward on each node in topo *)
+    FaizonZaman`MicrogradWL`MGValue[ a["Ref"] ]["Grad"] = 1.0;
+    Scan[FaizonZaman`MicrogradWL`MGValue[ #[ "Ref" ] ][ "_Backward" ]&, Reverse[topo]];
+    ]
+
+MGVTrace[root:FaizonZaman`MicrogradWL`MGValue[_]]:= Block[
+    {nodes = {}, edges = {}, build},
+    build[v_FaizonZaman`MicrogradWL`MGValue] := If[
+            Not@MemberQ[nodes, v["Ref"]],
+            nodes~Join~{v["Ref"]};
+            Scan[(edges~Join~{# \[DirectedEdge] v};build[#])&, FaizonZaman`MicrogradWL`MGValue /@ v["_Prev"]];
+            ];
+    build[root];
+    <| "Nodes" -> nodes, "Edges" -> edges |>
+    ]
+(* MGVGraph *)
+MGVGraph[a:FaizonZaman`MicrogradWL`MGValue[_]] := Module[
+    {trace = MGVTrace[a]},
+    (* TODO: Add op node to graph *)
+    Graph[trace["Edges"], VertexLabels -> "Name"]
     ]
 
 End[]

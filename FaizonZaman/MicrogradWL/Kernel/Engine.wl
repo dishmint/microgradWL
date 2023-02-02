@@ -204,7 +204,6 @@ FaizonZaman`MicrogradWL`MGValue /: Backward[a:FaizonZaman`MicrogradWL`MGValue[_]
             Scan[buildTopo, FaizonZaman`MicrogradWL`MGValue /@ v["_Prev"]];
             topo = topo~Join~{v}
             ];
-    (* TODO: Need to figure out the iteration count ^^^ *)
     buildTopo[a];
 
     (* 2 - Call _Backward on each node in topo *)
